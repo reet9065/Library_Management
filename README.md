@@ -18,7 +18,7 @@ A desktop-based Library Management System developed using **Electron.js**, **Nod
 2. **Navigate to the project directory**  
    Example:
    ```bash
-   cd source_code\SMD_Library_Managment
+   cd Library_Management\
    ```
 
 3. **Install project dependencies**
@@ -40,7 +40,7 @@ This will launch the desktop application using Electron and Node.js.
 The application includes an OTP system that sends verification emails.
 
 1. Open this file in a code editor:  
-   `source_code/SMD_Library_Managment/utils/otpSender.js`
+   `Library_Management/utils/otpSender.js`
 
 2. Edit the following lines:
    ```js

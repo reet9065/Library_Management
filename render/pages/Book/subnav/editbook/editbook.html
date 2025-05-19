@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit book</title>
+    <link rel="stylesheet" href="../addbook/addbook.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Back Button -->
+        <a href="#" class="back-btn" >&larr; Back</a>
+
+        <!-- Error Messages -->
+        <div class="error-message" id="errorMessage"></div>
+
+        <!-- Add Book Form -->
+        <form class="book-form" id="addBookForm">
+            <h1>Edit Book</h1>
+
+            <div class="form-group">
+                <label for="name">Book Name <span class="required">*</span></label>
+                <input type="text" 
+                       id="name" 
+                       name="name" 
+                       required
+                       placeholder="Enter book title">
+            </div>
+
+            <div class="form-group">
+                <label for="author">Author <span class="required">*</span></label>
+                <input type="text" 
+                       id="author" 
+                       name="author" 
+                       required
+                       placeholder="Enter author name">
+            </div>
+
+            <div class="form-group">
+                <label for="topic">Topic</label>
+                <input type="text" 
+                       id="topic" 
+                       name="topic" 
+                       placeholder="Enter book topic/category">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="copies">Total Copies <span class="required">*</span></label>
+                    <input type="number" 
+                           id="copies" 
+                           name="copies" 
+                           required
+                           min="1"
+                           placeholder="Enter total copies">
+                </div>
+
+                <div class="form-group">
+                    <label for="borrowed">Borrowed Copies</label>
+                    <input type="number" 
+                           id="borrowed" 
+                           name="borrowed" 
+                           value="0"
+                           min="0"
+                           placeholder="Currently borrowed copies">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="publication_year">Publication Year</label>
+                    <input type="number" 
+                           id="publication_year" 
+                           name="publication_year" 
+                           min="1800"
+                           max="9999"
+                           placeholder="Enter publication year">
+                </div>
+
+                <div class="form-group">
+                    <label for="language">Language</label>
+                    <select id="language" name="language">
+                        <option value="">Select Language</option>
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="French">French</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Update Book</button>
+        </form>
+    </div>
+    <script src="../../../../lib/form_lib.js"></script>
+    <script src="editbook.js"></script>
+    <script src="../../../../lib/navigator.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Otp.css">
+    <title>Otp verification</title>
+</head>
+
+<body class="otp">
+  <script src="initOTP.js"></script>
+    <div class="container">
+        <div class="login-box">
+          <img src="../../assets/collage_logo.PNG" alt="S.M.D College Logo" class="logo" />
+          <h2>S.M.D College Library</h2>
+          <p>OTP sent to your email address</p>
+    
+          <!-- Error Message -->
+          <div id="error-message" class="error-message">Invalid OTP. Please try again.</div>
+    
+          <!-- OTP Form -->
+          <form id="otp-form">
+            <div class="textbox">
+              <input type="text" id="otp-input" placeholder="Enter OTP" required />
+            </div>
+    
+            <button type="submit" class="btn">Verify</button>
+          </form>
+    
+          <button id="resend-btn" class="resend-btn">Resend OTP</button>
+        </div>
+      </div>
+        <script src="Otp.js"></script>
+        <script src="../../lib/navigator.js"></script>
+    </div>
+</body>
+
+</html>

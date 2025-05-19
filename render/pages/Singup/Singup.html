@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Singup.css">
+        <title>Singup</title>
+    </head>
+<body class="SingUp">
+    <div class="container">
+        <div class="container">
+            <div class="login-box">
+              <img src="../../assets/collage_logo.PNG" alt="S.M.D College Logo" class="logo">
+              <h2>S.M.D College Library</h2>
+              
+              <!-- Error alert message -->
+              <div id="error-message" class="error-message">Invalid Email or Password!</div>
+              
+              <form id="login-form" class="login-form">
+                <div class="textbox">
+                  <input type="email" placeholder="Email" id="email" name="email" required>
+                </div>
+                <div class="textbox">
+                  <input type="password" placeholder="Password" class="password" name="password" required>
+                  <button type="button" class="toggle-password">Show</button>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Conform Password" class="password" name="cpassword" required>
+                    <button type="button" class="toggle-password">Show</button>
+                  </div>
+                <button type="submit" class="btn">Singup</button>
+              </form>
+              
+              <a href="#" class="signup-link" data-nav="login">Already have an account? Login</a>
+            </div>
+        </div>
+      </div>
+      <script src="../../lib/form_lib.js"></script>
+      <script src="Singup.js"></script>
+      <script src="../../lib/navigator.js"></script>
+</body>
+</html>

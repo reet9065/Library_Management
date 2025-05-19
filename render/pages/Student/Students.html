@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./Students.css">
+        <title>Student info</title>
+    </head>
+<body class="Student_page">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-brand">SMD Library Management</div>
+    <ul class="nav-menu">
+            <li><a href="#"  data-nav="home">Home</a></li>
+            <li><a href="#"  data-nav="books" >Books</a></li>
+            <li><a href="#" class="active" data-nav="students" >Students</a></li>
+            <li><a href="#" id="logout" >[Logout]</a></li>
+    </ul>
+  </nav>
+
+    <div class="container">
+        <!-- Action Bar -->
+        <div class="action-bar">
+            <input type="search" 
+                  placeholder="Search students..." 
+                  class="search-input">
+            <button class="add-btn" data-nav="addstudent">+ Add New Student</button>
+        </div>
+
+        <!-- Students List -->
+        <div class="students-list">
+            <!-- Student Item 1 -->
+            <div class="student-item" data-nav="studentinfo/1">
+                <div class="student-info">
+                    <div class="student-main">
+                        <h3 class="student-name">Rahul Sharma</h3>
+                        <span class="reg-no">REG-2022001</span>
+                    </div>
+                    <div class="student-details">
+                        <span class="detail-item">
+                            <span class="detail-label">Session:</span>
+                            2022-2025
+                        </span>
+                        <span class="detail-item">
+                            <span class="detail-label">Course:</span>
+                            B.Tech Computer Science
+                        </span>
+                    </div>
+                </div>
+                <button class="delete-btn">&times;</button>
+            </div>
+
+            <!-- Student Item 2 -->
+            <div class="student-item" data-nav="studentinfo/2">
+                <div class="student-info">
+                    <div class="student-main">
+                        <h3 class="student-name">Priya Patel</h3>
+                        <span class="reg-no">REG-2022002</span>
+                    </div>
+                    <div class="student-details">
+                        <span class="detail-item">
+                            <span class="detail-label">Session:</span>
+                            2022-2025
+                        </span>
+                        <span class="detail-item">
+                            <span class="detail-label">Course:</span>
+                            B.Sc Information Technology
+                        </span>
+                    </div>
+                </div>
+                <button class="delete-btn">&times;</button>
+            </div>
+
+            <!-- Add more student items as needed -->
+        </div>
+    </div>
+    
+    <script src="../../lib/logout.js"></script>
+    <script src="../../lib/list_manager.js"></script>
+    <script src="Students.js"></script>
+    <script src="../../lib/navigator.js"></script>
+
+    </div>
+</body>
+</html>

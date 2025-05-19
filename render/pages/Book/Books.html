@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Books.css">
+    <link rel="stylesheet" href="../../lib/navbar.css">
+    <title>Books</title>
+</head>
+
+<body class="Books">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-brand">SMD Library Management</div>
+        <ul class="nav-menu">
+            <li><a href="#"  data-nav="home">Home</a></li>
+            <li><a href="#" class="active" data-nav="books" >Books</a></li>
+            <li><a href="#" data-nav="students" >Students</a></li>
+            <li><a href="#" id="logout" >[Logout]</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Search and Add Button Section -->
+        <div class="action-bar">
+            <input type="search" 
+                   placeholder="Search books..." 
+                   class="search-input">
+            <button class="add-btn" data-nav="addbook">+ Add New Book</button>
+        </div>
+
+        <!-- Books List -->
+        <div class="books-list">
+            <!-- Book Item 1 -->
+            <div class="book-item" data-nav="bookinfo/1">
+                <div class="book-info">
+                    <h3 class="book-title">Introduction to Computer Science</h3>
+                    <div class="book-details">
+                        <span class="detail-item">
+                            <span class="detail-label">Author:</span>
+                            John Smith
+                        </span>
+                        <span class="detail-item">
+                            <span class="detail-label">ISBN:</span>
+                            978-1234567890
+                        </span>
+                        <span class="detail-item">
+                            <span class="detail-label">Available:</span>
+                            15/20 copies
+                        </span>
+                    </div>
+                </div>
+                <button class="delete-btn">&times;</button>
+            </div>
+
+            <!-- Book Item 2 -->
+            <div class="book-item" data-nav="bookinfo/2">
+                
+                <div class="book-info">
+                    <h3 class="book-title">Web Development Basics</h3>
+                    <div class="book-details">
+                        <span class="detail-item">
+                            <span class="detail-label">Author:</span>
+                            Alice Johnson
+                        </span>
+                        <span class="detail-item">
+                            <span class="detail-label">ISBN:</span>
+                            978-0987654321
+                        </span>
+                        <span class="detail-item">
+                            <span class="detail-label">Available:</span>
+                            5/10 copies
+                        </span>
+                    </div>
+                </div>
+                <button class="delete-btn">&times;</button>
+            </div>
+
+            <!-- Add more book items as needed -->
+        </div>
+    </div>
+    <script src="../../lib/logout.js"></script>
+    <script src="../../lib/list_manager.js"></script>
+    <script src="Book.js"></script>
+    <script src="../../lib/navigator.js"></script>
+</body>
+
+</html>

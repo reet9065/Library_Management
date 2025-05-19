@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <link rel="stylesheet" href="Home.css">
+  <link rel="stylesheet" href="../../lib/navbar.css">
+  <title>Welcome to S.M.D library</title>
+</head>
+
+<body class="Home">
+  <nav class="navbar">
+    <div class="nav-brand">SMD Library Management</div>
+    <ul class="nav-menu">
+        <li><a href="#" class="active" data-nav="home">Home</a></li>
+        <li><a href="#" data-nav="books" >Books</a></li>
+        <li><a href="#" data-nav="students" >Students</a></li>
+        <li><a href="#" id="logout" >[Logout]</a></li>
+    </ul>
+  </nav>
+
+<!-- Main Content -->
+<div class="container">
+    <!-- Statistics Cards -->
+    <div class="cards-container">
+        <div class="card book-card" data-nav="books">
+            <h3>Total Books</h3>
+            <p class="count"></p>
+        </div>
+
+        <div class="card student-card" data-nav="students">
+            <h3>Total Students</h3>
+            <p class="count"></p>
+        </div>
+    </div>
+
+    <!-- Activity Logs Section -->
+    <div class="logs-section">
+        
+        <h2>Recent Add Books</h2>
+        <div class="logs-table">
+            <!-- <div class="log-header">
+                <span>Book name</span>
+                <span>Author</span>
+                <span>Publication Year</span>
+                <span>Language</span>
+            </div>
+            
+            <div class="log-item">
+                <span>2023-07-20 14:30</span>
+                <span>Book Borrowed</span>
+                <span>John Doe</span>
+                <span>"Introduction to CSS" (ID: LIB-234)</span>
+            </div>
+
+            <div class="log-item">
+                <span>2023-07-20 13:45</span>
+                <span>Book Returned</span>
+                <span>Alice Smith</span>
+                <span>"Web Development Basics" (ID: LIB-198)</span>
+            </div>
+
+            <div class="log-item">
+                <span>2023-07-20 12:15</span>
+                <span>New Student Added</span>
+                <span>Admin</span>
+                <span>Student ID: S-789</span>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+<script src="../../lib/logout.js"></script>
+  <script src="../../lib/list_manager.js"></script>
+  <script src="../../lib/navigator.js"></script>
+  <script src="Home.js"></script>
+</body>
+
+</html>

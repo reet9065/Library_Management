@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login.css">
+    <title>Login</title>
+</head>
+
+<body class="Login">
+    <div class="container">
+        <div class="container">
+            <div class="login-box">
+              <img src="../../assets/collage_logo.PNG" alt="S.M.D College Logo" class="logo">
+              <h2>S.M.D College Library</h2>
+              
+              <!-- Error alert message -->
+              <div id="error-message" class="error-message">Invalid Email or Password!</div>
+              
+              <form id="login-form">
+                <div class="textbox">
+                  <input type="email" placeholder="Email" id="email" required>
+                </div>
+                <div class="textbox">
+                  <input type="password" placeholder="Password" id="password" required>
+                  <button type="button" id="toggle-password">Show</button>
+                </div>
+                <button type="submit" class="btn">Login</button>
+              </form>
+              
+              <a href="#" class="signup-link" data-nav="singup">Don't have an account? Sign up</a>
+              <a href="#" class="signup-link" id="forgetpass" >Forget password ?</a>
+            </div>
+        </div>
+
+        <script src="Login.js"></script>
+
+        <script src="../../lib/navigator.js"></script>
+
+    </div>
+</body>
+
+</html>

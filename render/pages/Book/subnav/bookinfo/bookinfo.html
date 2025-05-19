@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <link rel="stylesheet" href="bookinfo.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Back Button -->
+        <a href="#" class="back-btn" data-nav="books">&larr; Back to Book List</a>
+
+        <!-- Book Information Section -->
+        <div class="book-info-section">
+            <div class="book-header">
+                <h1 class="book-title">Introduction to Computer Science</h1>
+                <div class="action-buttons">
+                    <button class="edit-btn">Edit Book</button>
+                    <button class="delete-btn">Delete Book</button>
+                </div>
+            </div>
+            
+            <div class="book-details-grid">
+                <div class="detail-item">
+                    <span class="detail-label">Author:</span>
+                    <span class="detail-value">John Smith</span>
+                </div>
+                
+                <div class="detail-item">
+                    <span class="detail-label">Publication Year:</span>
+                    <span class="detail-value">2020</span>
+                </div>
+
+                <div class="detail-item">
+                    <span class="detail-label">Language:</span>
+                    <span class="detail-value">English</span>
+                </div>
+
+                <div class="detail-item">
+                    <span class="detail-label">Total Copies:</span>
+                    <span class="detail-value">15</span>
+                </div>
+
+                <div class="detail-item">
+                    <span class="detail-label">Available Copies:</span>
+                    <span class="detail-value">8</span>
+                </div>
+
+                <div class="detail-item">
+                    <span class="detail-label">Topic/Category:</span>
+                    <span class="detail-value">Computer Science</span>
+                </div>
+
+                <div class="detail-item">
+                    <span class="detail-label">Status:</span>
+                    <span class="availability available">Available</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Borrowers List -->
+        <div class="borrowers-section">
+            <h2>Currently Borrowed By</h2>
+            
+            <div class="borrowers-list">
+                <!-- <div class="list-header">
+                    <span>S.No.</span>
+                    <span>Student Name</span>
+                    <span>Registration No.</span>
+                    <span>Course</span>
+                </div>
+                 -->
+                <!-- <div class="borrower-item">
+                    <span>1.</span>
+                    <span>Alice Johnson</span>
+                    <span>REG-2022001</span>
+                    <span>B.Tech Computer Science</span>
+                </div> -->
+
+                <!-- <div class="borrower-item">
+                    <span>2.</span>
+                    <span>Bob Williams</span>
+                    <span>REG-2022002</span>
+                    <span>M.Sc Information Technology</span>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script src="bookinfo.js"></script>
+    <script src="../../../../lib/navigator.js"></script>
+</body>
+</html>

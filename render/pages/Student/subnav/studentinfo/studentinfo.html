@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <link rel="stylesheet" href="studentinfo.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Back Button -->
+        <a href="#" class="back-btn" data-nav="students">&larr; Back to Student List</a>
+
+        <!-- Student Information Section -->
+        <div class="student-info-section">
+            <div class="student-header">
+                <h1 class="student-name">Rahul Sharma</h1>
+                <div class="action-buttons">
+                    <button class="Assign-btn" data-nav="issuebooks">Issue Books</button>
+                    <button class="edit-btn">Edit Student</button>
+                    <button class="delete-btn">Delete Student</button>
+                </div>
+            </div>
+            
+            <div class="student-details-grid">
+                <div class="detail-item">
+                    <span class="detail-label">Father's Name:</span>
+                    <span class="detail-value">Rajesh Sharma</span>
+                </div>
+                
+                <div class="detail-item">
+                    <span class="detail-label">Mother's Name:</span>
+                    <span class="detail-value">Priya Sharma</span>
+                </div>
+
+                <div class="detail-item">
+                    <span class="detail-label">Email:</span>
+                    <span class="detail-value">rahul.sharma@example.com</span>
+                </div>
+
+                <div class="detail-item">
+                    <span class="detail-label">Phone No:</span>
+                    <span class="detail-value">+91 9876543210</span>
+                </div>
+
+                <div class="detail-item">
+                    <span class="detail-label">Registration No:</span>
+                    <span class="detail-value">REG-2022001</span>
+                </div>
+
+                <div class="detail-item">
+                    <span class="detail-label">Session:</span>
+                    <span class="detail-value">2022-2025</span>
+                </div>
+
+                <div class="detail-item">
+                    <span class="detail-label">Course:</span>
+                    <span class="detail-value">B.Tech Computer Science</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Borrowed Books List -->
+        <div class="borrowed-books-section">
+            <h2>Book Borrowing History</h2>
+            
+            <div class="books-list">
+                <!-- <div class="list-header">
+                    <span>S.No.</span>
+                    <span>Book Details</span>
+                    <span>Status</span>
+                </div> -->
+                
+                <!-- Currently Borrowed Book 1 -->
+                <!-- <div class="book-item">
+                    <span>1.</span>
+                    <div class="book-details">
+                        <div class="book-title">Introduction to Computer Science</div>
+                        <div class="book-meta">
+                            <span>Author: John Smith</span>
+                            <span>Publication Year: 2020</span>
+                            <span>Borrowed Date: 15/03/2023</span>
+                        </div>
+                    </div>
+                    <div class="book-status">
+                        <button class="return-btn">Return</button>
+                    </div>
+                </div> -->
+
+                <!-- Currently Borrowed Book 2 -->
+                <!-- <div class="book-item">
+                    <span>2.</span>
+                    <div class="book-details">
+                        <div class="book-title">Data Structures and Algorithms</div>
+                        <div class="book-meta">
+                            <span>Author: Emily Johnson</span>
+                            <span>Publication Year: 2019</span>
+                            <span>Borrowed Date: 22/04/2023</span>
+                        </div>
+                    </div>
+                    <div class="book-status">
+                        <button class="return-btn">Return</button>
+                    </div>
+                </div> -->
+
+                <!-- Returned Book 1 -->
+                <!-- <div class="book-item">
+                    <span>3.</span>
+                    <div class="book-details">
+                        <div class="book-title">Database Management Systems</div>
+                        <div class="book-meta">
+                            <span>Author: Michael Brown</span>
+                            <span>Publication Year: 2018</span>
+                            <span>Borrowed Date: 10/01/2023</span>
+                        </div>
+                    </div>
+                    <div class="book-status">
+                        <span class="returned-text">Returned on 05/02/2023</span>
+                    </div>
+                </div> -->
+
+                <!-- Returned Book 2 -->
+                <!-- <div class="book-item">
+                    <span>4.</span>
+                    <div class="book-details">
+                        <div class="book-title">Operating System Concepts</div>
+                        <div class="book-meta">
+                            <span>Author: Abraham Silberschatz</span>
+                            <span>Publication Year: 2018</span>
+                            <span>Borrowed Date: 05/12/2022</span>
+                        </div>
+                    </div>
+                    <div class="book-status">
+                        <span class="returned-text">Returned on 20/12/2022</span>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script src="studentinfo.js"></script>
+    <script src="../../../../lib/navigator.js"></script>
+</body>
+</html>

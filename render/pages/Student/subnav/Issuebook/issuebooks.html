@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Books</title>
+    <link rel="stylesheet" href="issuebooks.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Back Button -->
+        <a href="#" class="back-btn" >&larr; Back to Student Profile</a>
+
+        <!-- Book Search Section -->
+        <div class="search-section">
+            <input type="text" 
+                   class="book-search" 
+                   placeholder="Search books "
+                   class="search-box">
+            
+            <!-- Search Suggestions -->
+            <div class="suggestions-list">
+                <!-- Suggestion Item 1 -->
+                <!-- <div class="suggestion-item">
+                    <div class="book-info">
+                        <div class="book-meta">
+                            <span class="book-title">Introduction to Computer Science</span>
+                            <span class="book-author">John Smith (2020)</span>
+                            <span class="book-language">English</span>
+                        </div>
+                    </div>
+                    <button class="add-btn">Add</button>
+                </div> -->
+
+                <!-- Add more suggestion items here -->
+            </div>
+        </div>
+
+        <!-- Selected Books Section -->
+        <div class="selected-books">
+            <h2>Books to Issue</h2>
+            
+            <!-- Selected Book Item -->
+            <!-- <div class="book-item">
+                <div class="book-details">
+                    <span class="book-title">Web Development Basics</span>
+                    <div class="meta-group">
+                        <span class="author">Alice Johnson</span>
+                        <span class="year">2019</span>
+                        <span class="language">English</span>
+                        <span class="topic">Computer Science</span>
+                    </div>
+                </div>
+                <button class="remove-btn">&times;</button>
+            </div> -->
+        </div>
+
+        <!-- Floating Action Button -->
+        <button class="issue-btn" disabled>Issue Selected Books (0)</button>
+        <script src="../../../../lib/list_manager.js"></script>
+        <script src="issuebooks.js"></script>
+    </div>
+</body>
+</html>

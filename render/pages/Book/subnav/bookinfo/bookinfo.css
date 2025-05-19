@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.back-btn:hover {
+    color: #3498db;
+}
+
+/* Book Information Section */
+.book-info-section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.book-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.book-title {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 28px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn, .delete-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.edit-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #2980b9;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.book-details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: #7f8c8d;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.detail-value {
+    color: #2c3e50;
+    font-size: 16px;
+}
+
+.availability {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.available {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.not-avilable{
+    background-color: #edd4d4;
+    color: #571515;
+}
+
+/* Borrowers Section */
+.borrowers-section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+}
+
+.borrowers-section h2 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.borrowers-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-header {
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr;
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #2c3e50;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.borrower-item {
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+}
+
+.borrower-item:last-child {
+    border-bottom: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .book-details-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .list-header, .borrower-item {
+        grid-template-columns: 30px 1fr 1fr;
+    }
+    
+    .list-header span:nth-child(4),
+    .borrower-item span:nth-child(4) {
+        display: none;
+    }
+}
